@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="178.0" style="-fx-background-color: #cc66ff; -fx-pref-height: 600px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.vatri.inventory.controllers.MenuController">
+  <children>
+    <VBox layoutX="14.0" layoutY="169.0" prefHeight="372.0" prefWidth="150.0">
+      <children>
+        <Button fx:id="" mnemonicParsing="false" onAction="#dashboardAction" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fff0b3;" text="Dashboard" />
+        <Button id="" fx:id="btnProducts" mnemonicParsing="false" onAction="#openProducts" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #a3a3c2;" text="Products">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+        <Button id="" fx:id="btnGroup" mnemonicParsing="false" onAction="#openGroups" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #ffd9b3;" text="Product Groups">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+        <Button id="" mnemonicParsing="false" onAction="#openOrders" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #ffbf80;" text="Orders">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+        <Button id="" mnemonicParsing="false" onAction="#openStock" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #b3b3b3;" text="Stock">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+      </children>
+      <padding>
+        <Insets />
+      </padding>
+    </VBox>
+      <Button layoutX="14.0" layoutY="541.0" minHeight="45.0" minWidth="150.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #ff6666;" text="Logout" />
+  </children>
+</AnchorPane>

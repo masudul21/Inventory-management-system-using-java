@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff0b3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.vatri.inventory.controllers.DashboardController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="71.0" layoutX="14.0" layoutY="165.0" stroke="BLACK" strokeType="INSIDE" width="167.0" />
+    <Label alignment="CENTER_LEFT" contentDisplay="LEFT" layoutX="14.0" layoutY="14.0" text="DASHBOARD">
+      <font>
+        <Font size="23.0" />
+      </font>
+    </Label>
+    <Label layoutX="26.0" layoutY="185.0" text="Products:">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="productsNumber" layoutX="121.0" layoutY="183.0" text="-">
+      <font>
+        <Font size="25.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="71.0" layoutX="187.0" layoutY="165.0" stroke="BLACK" strokeType="INSIDE" width="167.0">
+      <fill>
+        <Color blue="0.875" green="0.875" red="0.875" fx:id="x3" />
+      </fill>
+    </Rectangle>
+    <Label font="$x1" layoutX="207.0" layoutY="185.0" text="Groups" />
+    <Label fx:id="groupsNumber" font="$x2" layoutX="283.0" layoutY="183.0" text="-" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="71.0" layoutX="361.0" layoutY="165.0" stroke="BLACK" strokeType="INSIDE" width="167.0" />
+    <Label font="$x1" layoutX="367.0" layoutY="186.0" text="Orders" />
+    <Label fx:id="ordersNumber" font="$x2" layoutX="440.0" layoutY="183.0" text="-" />
+  </children>
+</AnchorPane>

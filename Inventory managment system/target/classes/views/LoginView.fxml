@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.vatri.inventory.controllers.LoginController">
+  <children>
+    <Label layoutX="159.0" layoutY="92.0" prefHeight="36.0" prefWidth="156.0" text="Login" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="285.0">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="57.0" layoutY="140.0" prefHeight="17.0" prefWidth="78.0" text="User ID:" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="465.0" />
+    <TextField fx:id="userid" layoutX="119.0" layoutY="136.0" prefWidth="200.0" promptText="user id" />
+    <Label layoutX="57.0" layoutY="185.0" text="Password:" />
+    <PasswordField id="" fx:id="passwordField" layoutX="119.0" layoutY="181.0" prefWidth="200.0" promptText="password" />
+    <Button id="btnLogin" layoutX="119.0" layoutY="243.0" mnemonicParsing="false" onAction="#btnLoginPressed" text="Login">
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Label fx:id="errorLabel" font="$x1" layoutX="155.0" layoutY="214.0" prefHeight="21.0" prefWidth="200.0" text="Login failed!" textFill="RED" visible="false" />
+    <Label focusTraversable="false" layoutY="14.0" opacity="1.0" prefWidth="460.0" text="Inventory Management" textAlignment="JUSTIFY" textFill="#008d96" underline="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="140.0">
+      <font>
+        <Font name="System Bold" size="33.0" />
+      </font>
+    </Label>
+      <Text layoutX="451.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ashraful Islam" wrappingWidth="78.0" />
+      <Text layoutX="451.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Md. Masudul Haque" />
+      <Text layoutX="451.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sakhawat Rasib" />
+      <Text layoutX="451.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created by:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="219.0" layoutY="243.0" mnemonicParsing="false" onAction="#clearaction" prefHeight="31.0" prefWidth="64.0" text="Clear">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+  </children>
+</AnchorPane>
